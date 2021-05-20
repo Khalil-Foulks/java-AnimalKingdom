@@ -23,6 +23,16 @@ public class Main {
         animalList.add(new Fish("Catfish",1817));
         animalList.add(new Fish("Perch",1758));
 
+        //sort by year; desc
+        animalList.sort( (Animal a1, Animal a2) -> {
+            return (a1.getYear() > a2.getYear() ? 1: -1);
+        });
+        System.out.println(animalList);
+
+        //sort by name; asc
+        animalList.sort( (Animal a1, Animal a2) -> {
+            return (a1.getName().compareToIgnoreCase(a2.getName()));
+        });
         System.out.println(animalList);
 
         // Mammals myMammal = new Mammals("Panda", 1869);
