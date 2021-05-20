@@ -1,37 +1,22 @@
-package AnimalKingdomApp;
+package animalKingdomApp;
 
-public class Birds implements Animal {
-    private int id;
-    private String name;
-    private int year;
-
-    @Override
-    public int getId() {
-        return id;
+public class Birds extends Animal {
+    public Birds(String name, int year) {
+        super(name, year);
     }
 
     @Override
-    public String getName() {
-        return name;
+    public void move() {
+        System.out.println("walking");
     }
 
     @Override
-    public int getYear() {
-        return year;
+    public void breathe() {
+        System.out.println("lungs");
     }
 
     @Override
-    public String move() {
-        return "flying";
-    }
-
-    @Override
-    public String breathe() {
-        return "lungs";
-    }
-
-    @Override
-    public String reproduce() {
-        return "eggs";
+    public void reproduce() {
+        System.out.println("live births");
     }
 }
