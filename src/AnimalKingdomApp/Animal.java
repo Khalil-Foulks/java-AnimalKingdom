@@ -35,9 +35,9 @@ public abstract class Animal {
         this.year = year;
     }
 
-    abstract void move();
-    abstract void breathe();
-    abstract void reproduce();
+    abstract String move();
+    abstract String breathe();
+    abstract String reproduce();
 
     @Override
     public String toString() {
