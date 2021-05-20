@@ -1,4 +1,4 @@
-package AnimalKingdomApp;
+package animalKingdomApp;
 
 public abstract class Animal {
     protected static int maxId = 1;
@@ -35,7 +35,13 @@ public abstract class Animal {
         this.year = year;
     }
 
-    abstract String move();
-    abstract String breathe();
-    abstract String reproduce();
+    abstract void move();
+    abstract void breathe();
+    abstract void reproduce();
+
+    @Override
+    public String toString() {
+        return "Name: " + name + "\n" +
+            "Year: " + year;
+    }
 }
