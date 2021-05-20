@@ -1,18 +1,18 @@
 package animalKingdomApp;
 
-public class Fish extends Animal {
-    public Fish(String name, int year) {
+public class Bird extends Animal {
+    public Bird(String name, int year) {
         super(name, year);
     }
 
     @Override
     public String move() {
-        return "swimming";
+        return "flying";
     }
 
     @Override
     public String breathe() {
-        return "gills";
+        return "lungs";
     }
 
     @Override
